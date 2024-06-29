@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="output.css" />
+    <script defer src="burgerMenu.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body class="font-Montserrat text-gray-900">
+
+    <!-- nav -->
+    <section class="bg-white relative flex justify-between items-center border-b-2 border-myGray py-1 px-8 lg:px-32 ">
+        <h1 id="logo" class="font-MrDafoe  min-w-min p-2 text-4xl text-myPink">salt.</h1>
+
+
+        <svg class="burger-menu sm:hidden" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+            width="24px" fill="#000000">
+            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+        </svg>
+
+        <div id="menu"
+            class="absolute right-0 top-0 w-full bg-white hidden z-20 sm:relative sm:block sm:bg-transparent">
+            <ul class="sm:flex sm:gap-4  sm:float-right">
+                <li class="text-center py-2">
+                    <a href="./index.html"
+                        class="text-sm text-myPink font-semibold hover:bg-myPink hover:text-white p-4">Home</a>
+                </li>
+                <li class="text-center py-2">
+                    <a href="#visitUs"
+                        class="text-sm text-myPink font-semibold hover:bg-myPink hover:text-white p-4">Visit Us</a>
+                </li>
+                <li class="text-center py-2">
+                    <a href="./teamPage.html"
+                        class="text-sm text-myPink font-semibold hover:bg-myPink hover:text-white p-4">Our
+                        Team</a>
+                </li>
+                <li class="text-center py-2">
+                    <a href="./index.html"
+                        class="text-sm text-myPink font-semibold hover:bg-myPink hover:text-white p-4">Categories</a>
+                </li>
+
+            </ul>
+        </div>
+
+    </section>
+    <h1 class="text-3xl text-center mb-10 mx-auto font-bold bg-myPink text-white p-2 ">Our Team
+    </h1>
+
+    <!-- story -->
+    <section class="mb-10 px-2 sm:w-10/12 sm:mx-auto ">
+        <p class="text-center w-full">
+            At <span class="text-white text-md bg-myPink p-1">Salt </span>, we believe that a great team is the
+            secret
+            ingredient
+            to creating the most delightful
+            baked goods. Meet the passionate individuals who make it all possible.
+        </p>
+    </section>
+
+    <!-- members -->
+    <section class="sm:w-10/12 px-2 text-sm sm:mx-auto">
+        <div class="flex flex-col mb-6 items-center justify-center gap-2 sm:flex-row ">
+            <img src="../images/person-icon.webp" alt="employee image" class="w-28 rounded-full">
+            <div class="flex flex-col">
+                <!-- name -->
+                <p class="uppercase font-semibold mb-2 sm:text-left text-center">James Green</p>
+                <!-- bio -->
+                <p class="sm:text-left text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
+                    culpa ullam
+                    quos harum quam alias
+                    mollitia officiis suscipit asperiores molestias voluptatum at similique nihil consequuntur nulla.
+                    Nisi,
+                    error. Saepe?
+                </p>
+            </div>
+
+        </div>
+        <div class="flex flex-col mb-6 items-center justify-center gap-2 sm:flex-row ">
+            <img src="../images/person-icon.webp" alt="employee image" class="w-28 rounded-full">
+            <div class="flex flex-col">
+                <!-- name -->
+                <p class="uppercase font-semibold mb-2 sm:text-left text-center">James Green</p>
+                <!-- bio -->
+                <p class="sm:text-left text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
+                    culpa ullam
+                    quos harum quam alias
+                    mollitia officiis suscipit asperiores molestias voluptatum at similique nihil consequuntur nulla.
+                    Nisi,
+                    error. Saepe?
+                </p>
+            </div>
+
+        </div>
+        <div class="flex flex-col items-center justify-center gap-2 sm:flex-row ">
+            <img src="../images/person-icon.webp" alt="employee image" class="w-28 rounded-full">
+            <div class="flex flex-col">
+                <!-- name -->
+                <p class="uppercase font-semibold mb-2 sm:text-left text-center">James Green</p>
+                <!-- bio -->
+                <p class="sm:text-left text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
+                    culpa ullam
+                    quos harum quam alias
+                    mollitia officiis suscipit asperiores molestias voluptatum at similique nihil consequuntur nulla.
+                    Nisi,
+                    error. Saepe?
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- footer -->
+    <h2 id="visitUs"
+        class="text-3xl text-center mt-11 mb-10 mx-auto drop-shadow-lg font-bold text-myPink bg-white w-fit p-2">Visit
+        Us
+    </h2>
+
+    <footer class="text-sm mt-14 w-full min-h-60">
+        <div class="flex flex-col px-2 gap-2 pb-7 items-center  sm:flex sm:flex-row sm:justify-center ">
+            <!-- info sectoin -->
+            <div>
+                <!-- address -->
+                <div class="mb-5 text-base"><span class="text-myPink">Address:</span><br />Lorem ipsum dolor
+                    sit,
+                    amet
+                    consectetur.</div>
+                <!-- Contact -->
+                <div class="mb-5 text-base"><span
+                        class="text-myPink">Contact:</span><br />075-563-7533<br />teste@mail.com
+                </div>
+                <!-- social media -->
+                <div class="flex gap-3 pb-5">
+                    <img src="../icons/squareFacebook.png" alt="Facebook Icon" width="24" class="hover:cursor-pointer">
+                    <img src="../icons/squareIG.png" alt="IG Icon" width="24" class="hover:cursor-pointer">
+                    <img src="../icons/squareLinkedin.png" alt="Linkedin Icon" width="24" class="hover:cursor-pointer">
+                    <img src="../icons/squareX.png" alt="x icon" width="24" class="hover:cursor-pointer">
+                </div>
+            </div>
+            <!-- location on map -->
+            <div>
+                <img src="../images/location.PNG" alt="">
+            </div>
+        </div>
+        <hr>
+
+        <!-- © copyright&policy-->
+        <div class="text-xs flex flex-wrap py-2 px-4 justify-between">
+            <p>© 2024. All rights reserved</p>
+            <div>
+                <a href="" class="mr-7">Privacy policy</a>
+                <a href="">Terms of service</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

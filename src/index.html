@@ -1,12 +1,240 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="output.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <h1>hello</h1>
-  </body>
+<html class="scroll-smooth" lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="output.css" />
+  <script defer src="index.js"></script>
+  <script defer src="burgerMenu.js"></script>
+  <title>Document</title>
+</head>
+
+<body class="font-Montserrat text-gray-900">
+  <!-- nav -->
+  <section class="bg-white relative flex justify-between items-center border-b-2 border-myGray py-1 px-8 lg:px-32 ">
+    <h1 id="logo" class="font-MrDafoe  min-w-min p-2 text-4xl text-myPink">salt.</h1>
+
+
+    <svg class="burger-menu sm:hidden" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+      width="24px" fill="#000000">
+      <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+    </svg>
+
+    <div id="menu" class="absolute right-0 top-0 w-full bg-white hidden z-20 sm:relative sm:block sm:bg-transparent">
+      <ul class="sm:flex sm:gap-4  sm:float-right">
+        <li class="text-center py-2">
+          <a href="./index.html" class="text-sm text-myPink font-semibold hover:bg-myPink hover:text-white p-4">Home</a>
+        </li>
+        <li class="text-center py-2">
+          <a href="#visitUs" class="text-sm text-myPink font-semibold hover:bg-myPink hover:text-white p-4">Visit Us</a>
+        </li>
+        <li class="text-center py-2">
+          <a href="./teamPage.html" class="text-sm text-myPink font-semibold hover:bg-myPink hover:text-white p-4">Our
+            Team</a>
+        </li>
+        <li class="text-center py-2">
+          <a href="#categories"
+            class="text-sm text-myPink font-semibold hover:bg-myPink hover:text-white p-4">Categories</a>
+        </li>
+
+      </ul>
+    </div>
+
+  </section>
+
+  <!-- hero -->
+  <section
+    class="px-8 py-10 w-full min-h-60  sm:min-h-96 sm:flex sm:items-center sm:px-36 bg-center relative bg-cover bg-no-repeat bg-[url('../images/image14.jpg')]">
+    <!-- box -->
+    <div>
+      <h1 class="text-2xl font-bold text-gray-100 drop-shadow-lg uppercase ">
+        From irresistible pastries to freshly baked breads
+      </h1>
+      <p class="hidden sm:block text-sm mt-4 drop-shadow-lg font-bold text-myPink bg-white w-fit p-2 ">Discover your new
+        favorite
+        treat today.</p>
+      <div class="flex">
+        <a href="#visitUs"
+          class="text-center font-medium min-w-20 text-sm shadow-lg text-gray-100 py-2 rounded-md bg-myPink mt-4 mr-4 hover:bg-myRed hover:scale-110 duration-150 ease-in">
+          Vist Us
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- categories -->
+  <h2 id="categories" class="text-xl text-center mb-6 mx-auto drop-shadow-lg font-semibold bg-myOffWhite p-2">Categories
+  </h2>
+  <!-- category icons-->
+  <div id="category-iconsList-container">
+    <div class="flex justify-center">
+      <ul>
+        <!-- myIcon in the class is for me to be able to manipulate the element from JS-->
+        <li icon="first"
+          class="hover:cursor-pointer shadow-lg myIcon  w-20 h-30 inline-block p-2 hover:bg-myPink rounded-md">
+          <p class="text-center">cakes</p>
+        </li>
+        <li icon="second"
+          class="hover:cursor-pointer shadow-lg myIcon w-20 inline-block p-2 hover:bg-myPink rounded-md">
+          <p class="text-center">bread</p>
+        </li>
+        <li icon="third" class="hover:cursor-pointer shadow-lg myIcon w-20 inline-block p-2 hover:bg-myPink rounded-md">
+          <p class="text-center">other</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Ratings -->
+  <h2 class="text-xl text-center my-6 mt-12 mx-auto drop-shadow-lg font-semibold bg-myOffWhite p-2 ">Ratings
+  </h2>
+  <!-- Ratings section -->
+  <div class='w-full min-h-60 flex flex-wrap justify-center '>
+    <!-- card -->
+    <div class='flex flex-col gap-5 justify-center items-center min-h-72 w-64  rounded-md overflow-hidden '>
+      <img src="../images/man1.jpg" alt="male" class="rounded-full w-2/5 h-auto">
+      <div>
+        <!-- stars -->
+        <div class="flex flex-row ">
+          <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#f96666">
+            <path
+              d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#f96666">
+            <path
+              d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#f96666">
+            <path
+              d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#f96666">
+            <path
+              d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#f96666">
+            <path
+              d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z" />
+          </svg>
+        </div>
+      </div>
+      <div class="text-center text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quis quas aspernatur
+        est
+        neque harum vitae
+      </div>
+    </div>
+    <!-- card -->
+    <div class='hidden sm:flex flex-col gap-5 justify-center items-center min-h-72 w-64  rounded-md overflow-hidden'>
+      <img src="../images/man2.jpg" alt="male" class="rounded-full w-2/5 h-auto">
+      <div>
+        <!-- stars -->
+        <div class="flex flex-row ">
+          <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#f96666">
+            <path
+              d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#f96666">
+            <path
+              d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#f96666">
+            <path
+              d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#f96666">
+            <path
+              d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#f96666">
+            <path
+              d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z" />
+          </svg>
+        </div>
+      </div>
+      <div class="text-center text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quis quas aspernatur
+        est
+        neque harum vitae
+      </div>
+    </div>
+    <!-- card -->
+    <div class=' hidden sm:flex flex-col gap-5 justify-center items-center min-h-72 w-64  rounded-md overflow-hidden'>
+      <img src="../images/man3.jpg" alt="male" class="rounded-full w-2/5 h-auto">
+      <div>
+        <!-- stars -->
+        <div class="flex flex-row ">
+          <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#f96666">
+            <path
+              d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#f96666">
+            <path
+              d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#f96666">
+            <path
+              d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#f96666">
+            <path
+              d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#f96666">
+            <path
+              d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z" />
+          </svg>
+        </div>
+      </div>
+      <div class="text-center text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quis quas aspernatur
+        est
+        neque harum vitae
+      </div>
+    </div>
+  </div>
+
+
+  <!-- footer -->
+  <h2 id="visitUs" class="text-xl text-center my-6 mx-auto drop-shadow-lg font-semibold bg-myOffWhite p-2">Visit
+    Us
+  </h2>
+  <footer class="text-sm mt-14 w-full min-h-60">
+    <div class="flex flex-col px-2 gap-2 pb-7 items-center  sm:flex sm:flex-row sm:justify-center ">
+      <!-- info sectoin -->
+      <div>
+        <!-- address -->
+        <div class="mb-5 text-base"><span class="text-myPink">Address:</span><br />Lorem ipsum dolor
+          sit,
+          amet
+          consectetur.</div>
+        <!-- Contact -->
+        <div class="mb-5 text-base"><span class="text-myPink">Contact:</span><br />075-563-7533<br />teste@mail.com
+        </div>
+        <!-- social media -->
+        <div class="flex gap-3 pb-5">
+          <img src="../icons/squareFacebook.png" alt="Facebook Icon" width="24" class="hover:cursor-pointer">
+          <img src="../icons/squareIG.png" alt="IG Icon" width="24" class="hover:cursor-pointer">
+          <img src="../icons/squareLinkedin.png" alt="Linkedin Icon" width="24" class="hover:cursor-pointer">
+          <img src="../icons/squareX.png" alt="x icon" width="24" class="hover:cursor-pointer">
+        </div>
+      </div>
+      <!-- location on map -->
+      <div>
+        <img src="../images/location.PNG" alt="">
+      </div>
+    </div>
+    <hr>
+
+    <!-- © copyright&policy-->
+    <div class="text-xs flex flex-wrap py-2 px-4 justify-between">
+      <p>© 2024. All rights reserved</p>
+      <div>
+        <a href="" class="mr-7">Privacy policy</a>
+        <a href="">Terms of service</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
 </html>
